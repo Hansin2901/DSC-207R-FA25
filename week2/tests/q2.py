@@ -1,0 +1,20 @@
+OK_FORMAT = True
+
+test = {   'name': 'q2',
+    'points': 1,
+    'suites': [   {   'cases': [   {   'code': '>>> assert aT.shape == (5, 3)\n',
+                                       'failure_message': 'The shape of aT is incorrect, the transpose should have 5 rows and 3 columns make sure that you are taking the transpose correctly.',
+                                       'hidden': False,
+                                       'locked': False},
+                                   {   'code': '>>> assert np.min(aT) >= 5\n',
+                                       'failure_message': "Some transpose entries are below 5. Compare aT to a to confirm transposing isn't introducing new values.",
+                                       'hidden': False,
+                                       'locked': False},
+                                   {   'code': '>>> assert np.linalg.det(B_inv) != 0\n',
+                                       'failure_message': "The inverse(B_inv) looks singular. Confirm you're inverting the 2x2 matrix B before calling np.linalg.inv.",
+                                       'hidden': False,
+                                       'locked': False}],
+                      'scored': True,
+                      'setup': '',
+                      'teardown': '',
+                      'type': 'doctest'}]}

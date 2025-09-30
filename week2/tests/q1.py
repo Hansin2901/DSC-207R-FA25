@@ -1,0 +1,20 @@
+OK_FORMAT = True
+
+test = {   'name': 'q1',
+    'points': 1,
+    'suites': [   {   'cases': [   {   'code': '>>> assert np.max(a) <= 26\n',
+                                       'failure_message': "It looks like some values exceed 26. Double-check the high argument you pass to np.random.randint; remember it's exclusive.",
+                                       'hidden': False,
+                                       'locked': False},
+                                   {   'code': '>>> assert np.min(a) >= 5\n',
+                                       'failure_message': 'Some elements are below 5. Review the low parameter in np.random.randint so the minimum stays at 5.',
+                                       'hidden': False,
+                                       'locked': False},
+                                   {   'code': '>>> assert a.shape == (3, 5)\n',
+                                       'failure_message': "The array isn't 3 by 5 yet. Check the size argument you pass to np.random.randint.",
+                                       'hidden': False,
+                                       'locked': False}],
+                      'scored': True,
+                      'setup': '',
+                      'teardown': '',
+                      'type': 'doctest'}]}
